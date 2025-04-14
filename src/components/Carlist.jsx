@@ -34,12 +34,12 @@ function Carlist() {
   }
 
   const [columnDefs] = useState([
-    { field: 'brand', sortable: true, filter: true, width: 180 },
-    { field: 'model', sortable: true, filter: true, width: 180 },
+    { field: 'brand', sortable: true, filter: true, width: 160 },
+    { field: 'model', sortable: true, filter: true, width: 160 },
     { field: 'color', sortable: true, filter: true, width: 180 },
-    { field: 'fuel', sortable: true, filter: true, width: 180 },
-    { field: 'modelYear', sortable: true, filter: true, width: 180 },
-    { field: 'price', sortable: true, filter: true, width: 180 },
+    { field: 'fuel', sortable: true, filter: true, width: 160 },
+    { field: 'modelYear', sortable: true, filter: true, width: 160 },
+    { field: 'price', sortable: true, filter: true, width: 160 },
     {
       cellRenderer: params => <EditCar cardata={params.data} fetchCars={getCars} />,
       width: 120
@@ -58,7 +58,7 @@ function Carlist() {
       <Stack direction="row" spacing={2} sx={{ mt: 10 }}>
         <AddCar fetchCars={getCars} />
       </Stack>
-      <div className='ag-theme-material' style={{ width: '90%', height: 600 }}>
+      <div className='ag-theme-material' style={{ width: '100%', height: 550 }}>
         <AgGridReact
           rowData={cars}
           columnDefs={columnDefs}

@@ -11,7 +11,6 @@ function App() {
     <Container maxWidth="xl">
       <AppBar position="absolute">
         <Toolbar>
-          <img src="src/Images/car.jpg" />
           <Typography variant="h6">Car Shop</Typography>
         </Toolbar>
       </AppBar>
